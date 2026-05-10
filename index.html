@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>吴鑫 · Wu Xin — RL Engineer · Sim2Real · Embodied AI</title>
-  <meta name="description" content="清华大学 / 朗毅机器人算法实习 · 四足 Go2 与人形 G1 全链路 Sim2Real / VLA 经验" />
+  <title>吴鑫 Wu Xin · 机器人强化学习 / Sim2Real / 具身智能</title>
+  <meta name="description" content="清华大学硕士 · 华中科技大学本科 · 机器人强化学习 / Sim2Real / 具身智能 · Unitree Go2 / G1 真机部署作品集" />
   <meta name="theme-color" content="#0A0E1A" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%230A0E1A%22/><text x=%2216%22 y=%2222%22 text-anchor=%22middle%22 fill=%22%2338BDF8%22 font-size=%2218%22 font-family=%22monospace%22 font-weight=%22600%22>W</text></svg>" />
   <link rel="stylesheet" href="style.css" />
@@ -24,16 +24,24 @@
         </span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about"><span data-zh>关于</span><span data-en>About</span></a></li>
-        <li><a href="#quadruped"><span data-zh>四足 Go2</span><span data-en>Quadruped</span></a></li>
-        <li><a href="#humanoid"><span data-zh>人形 G1</span><span data-en>Humanoid</span></a></li>
+        <li><a href="#top"><span data-zh>首页</span><span data-en>Home</span></a></li>
+        <li><a href="#academic"><span data-zh>学术背景</span><span data-en>Education</span></a></li>
+        <li><a href="#projects"><span data-zh>项目</span><span data-en>Projects</span></a></li>
+        <li><a href="#demos"><span data-zh>视频</span><span data-en>Demos</span></a></li>
         <li><a href="#awards"><span data-zh>荣誉</span><span data-en>Awards</span></a></li>
+        <li><a href="#tech"><span data-zh>技术栈</span><span data-en>Skills</span></a></li>
         <li><a href="#contact"><span data-zh>联系</span><span data-en>Contact</span></a></li>
       </ul>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-        <span class="lang-zh-label">EN</span>
-        <span class="lang-en-label">中</span>
-      </button>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-zh-label">EN</span>
+          <span class="lang-en-label">中文</span>
+        </button>
+        <a href="assets/cv/wuxin_resume_cn.pdf" target="_blank" rel="noopener" class="btn btn-cv nav-cv" data-cv-link>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-zh>下载简历</span><span data-en>Download CV</span>
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -42,136 +50,164 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-meta">
-        <span class="hero-tag-mono">// 2026 · TSINGHUA UNIVERSITY · SHENZHEN</span>
+        <span class="hero-tag-mono">// ROBOT LEARNING · SIM2REAL · EMBODIED AI</span>
       </div>
       <h1 class="hero-name">
         <span data-zh>吴鑫</span><span data-en>Wu Xin</span>
+        <span class="hero-name-alt" data-zh>Wu Xin</span>
       </h1>
-      <p class="hero-role">
-        <span data-zh>强化学习 · Sim2Real · 具身智能</span>
-        <span data-en>Reinforcement Learning · Sim2Real · Embodied AI</span>
-      </p>
-      <p class="hero-sub">
-        <span data-zh>清华大学深圳国际研究生院 · 船舶与海洋工程在读硕士<br/>四足 Go2 与人形 G1 全链路 Sim2Real 经验 · 朗毅机器人算法实习</span>
-        <span data-en>M.S. Candidate, Tsinghua Shenzhen International Graduate School<br/>Full-stack Sim2Real experience on Unitree Go2 &amp; G1 · RL Intern @ LangYi Robotics</span>
-      </p>
-      <div class="hero-pills">
-        <span class="pill"><span data-zh>RL · Sim2Real</span><span data-en>RL · Sim2Real</span></span>
-        <span class="pill"><span data-zh>VLA / 世界模型</span><span data-en>VLA / World Model</span></span>
-        <span class="pill"><span data-zh>遥操作 / 数采</span><span data-en>Teleoperation</span></span>
+
+      <div class="hero-edu-line">
+        <span data-zh>清华大学硕士研究生<br/>华中科技大学本科</span>
+        <span data-en>M.S. Candidate, Tsinghua University<br/>B.E., Huazhong University of Science and Technology</span>
       </div>
+
+      <p class="hero-role">
+        <span data-zh>机器人强化学习 · Sim2Real · 具身智能</span>
+        <span data-en>Robot Learning · Reinforcement Learning · Sim2Real</span>
+      </p>
+
+      <p class="hero-sub">
+        <span data-zh>聚焦四足与人形机器人的强化学习控制、仿真训练与真机部署。<br/>具备 Unitree Go2 / G1 平台经验，完成 IsaacLab → MuJoCo → Real Robot 的训练、验证与部署闭环。</span>
+        <span data-en>Focused on quadruped and humanoid robot learning, with hands-on experience in IsaacLab training, MuJoCo Sim2Sim validation, and real-robot deployment on Unitree Go2 / G1.</span>
+      </p>
+
+      <div class="hero-pills">
+        <span class="pill">PPO</span>
+        <span class="pill">Sim2Real</span>
+        <span class="pill">IsaacLab</span>
+        <span class="pill">MuJoCo</span>
+        <span class="pill">Unitree Go2 / G1</span>
+        <span class="pill">VLA</span>
+      </div>
+
       <div class="hero-cta">
-        <a href="#quadruped" class="btn btn-primary">
-          <span data-zh>查看项目</span><span data-en>View Projects</span>
+        <a href="#projects" class="btn btn-primary">
+          <span data-zh>查看代表项目</span><span data-en>View Projects</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </a>
-        <a href="mailto:x-wu25@mails.tsinghua.edu.cn" class="btn btn-ghost">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span data-zh>联系我</span><span data-en>Contact</span>
+        <a href="assets/cv/wuxin_resume_cn.pdf" target="_blank" rel="noopener" class="btn btn-cv" data-cv-link>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-zh>下载简历 PDF</span><span data-en>Download CV</span>
         </a>
-      </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="1" y="1" width="12" height="18" rx="6"/>
-          <line x1="7" y1="5" x2="7" y2="9" class="scroll-dot"/>
-        </svg>
+        <a href="https://github.com/wx839" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- About -->
-  <section class="section" id="about">
+  <!-- Academic Background -->
+  <section class="section" id="academic">
     <div class="container">
       <div class="section-header">
         <span class="section-num">01</span>
         <h2 class="section-title">
-          <span data-zh>关于我</span><span data-en>About</span>
+          <span data-zh>学术背景</span><span data-en>Academic Background</span>
         </h2>
       </div>
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="assets/images/photo.jpg" alt="Wu Xin" />
-          <div class="about-photo-frame"></div>
+
+      <div class="academic-list">
+        <div class="academic-item academic-current">
+          <div class="academic-meta">
+            <span class="academic-period">2025 — <span data-zh>至今</span><span data-en>Present</span></span>
+            <span class="academic-status">
+              <span data-zh>在读</span><span data-en>Current</span>
+            </span>
+          </div>
+          <div class="academic-school">
+            <span data-zh>清华大学</span>
+            <span data-en>Tsinghua University</span>
+          </div>
+          <div class="academic-degree">
+            <span data-zh>硕士研究生</span>
+            <span data-en>M.S. Candidate</span>
+          </div>
         </div>
-        <div class="about-text">
-          <p>
-            <span data-zh>本科毕业于<strong>华中科技大学</strong>船舶与海洋工程（卓越班），现于<strong>清华大学深圳国际研究生院</strong>攻读硕士研究生。本科阶段连续两年以综合分第一获得国家奖学金（1/139），多次国家级竞赛获奖。</span>
-            <span data-en>B.E. from <strong>Huazhong University of Science and Technology</strong> (Outstanding Class, Naval Architecture), currently pursuing M.S. at <strong>Tsinghua Shenzhen International Graduate School</strong>. Two-time National Scholarship recipient (rank 1/139) with multiple national-level competition awards.</span>
-          </p>
-          <p>
-            <span data-zh>研究兴趣聚焦于<strong>具身智能与强化学习</strong>。目前在朗毅机器人担任算法工程师实习，从事四足机器人 DreamWaQ / Extreme Parkour 复现训练与真机部署，以及人形 G1 的 Locomotion、遥操作数据采集、Psi0 / SONIC 等 VLA 模型的微调与真机验证，具备从论文复现 → 仿真训练 → 真机调参的完整 Sim2Real 闭环经验。</span>
-            <span data-en>Research interests focus on <strong>embodied intelligence and reinforcement learning</strong>. Currently interning at LangYi Robotics, working on DreamWaQ / Extreme Parkour reproduction and real-robot deployment for quadrupeds, and locomotion / teleoperation / VLA fine-tuning (Psi0, SONIC) for the Unitree G1 humanoid. End-to-end Sim2Real loop closure experience from paper to real robot.</span>
-          </p>
 
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-num">1<span class="stat-num-frac">/139</span></div>
-              <div class="stat-label">
-                <span data-zh>国家奖学金 · 两次</span>
-                <span data-en>National Scholarship · ×2</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">31</div>
-              <div class="stat-label">
-                <span data-zh>真机演示视频</span>
-                <span data-en>Real-Robot Demos</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">2</div>
-              <div class="stat-label">
-                <span data-zh>机器人平台 Go2 / G1</span>
-                <span data-en>Robot Platforms · Go2 / G1</span>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-num"><span data-zh>特等奖</span><span data-en>Top Prize</span></div>
-              <div class="stat-label">
-                <span data-zh>海航器全国大赛 · 队长</span>
-                <span data-en>National Marine Robotics · Captain</span>
-              </div>
-            </div>
+        <div class="academic-item">
+          <div class="academic-meta">
+            <span class="academic-period">2021 — 2025</span>
           </div>
+          <div class="academic-school">
+            <span data-zh>华中科技大学</span>
+            <span data-en>Huazhong University of Science and Technology</span>
+          </div>
+          <div class="academic-degree">
+            <span data-zh>本科</span>
+            <span data-en>B.E.</span>
+          </div>
+          <ul class="academic-highlights">
+            <li><span data-zh>优秀毕业生</span><span data-en>Outstanding Graduate</span></li>
+            <li><span data-zh>两次国家奖学金</span><span data-en>Two-time National Scholarship</span></li>
+            <li><span data-zh>综合排名 1 / 139</span><span data-en>Rank 1 / 139</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="education">
-            <div class="edu-item">
-              <div class="edu-dot"></div>
-              <div class="edu-meta">2025 — 2027</div>
-              <div class="edu-school">
-                <span data-zh>清华大学深圳国际研究生院</span>
-                <span data-en>Tsinghua Shenzhen International Graduate School</span>
-              </div>
-              <div class="edu-degree">
-                <span data-zh>硕士 · 船舶与海洋工程</span>
-                <span data-en>M.S. · Naval Architecture &amp; Ocean Engineering</span>
-              </div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-dot"></div>
-              <div class="edu-meta">2021 — 2025</div>
-              <div class="edu-school">
-                <span data-zh>华中科技大学</span>
-                <span data-en>Huazhong University of Science and Technology</span>
-              </div>
-              <div class="edu-degree">
-                <span data-zh>本科 · 船舶与海洋工程（卓越班）· 优秀毕业生</span>
-                <span data-en>B.E. · Naval Architecture (Outstanding Class) · Outstanding Graduate</span>
-              </div>
-            </div>
-          </div>
+  <!-- Core Capabilities -->
+  <section class="section section-alt" id="capabilities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">
+          <span data-zh>核心能力</span><span data-en>Core Capabilities</span>
+        </h2>
+      </div>
+
+      <div class="cap-grid">
+        <div class="cap-card">
+          <div class="cap-num">01</div>
+          <h3 class="cap-title">
+            <span data-zh>强化学习训练</span>
+            <span data-en>Reinforcement Learning</span>
+          </h3>
+          <p class="cap-desc">PPO · Reward Design · Curriculum Learning · Domain Randomization</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-num">02</div>
+          <h3 class="cap-title">
+            <span data-zh>Sim2Real 闭环</span>
+            <span data-en>Sim2Real Loop</span>
+          </h3>
+          <p class="cap-desc">
+            <span data-zh>IsaacLab 训练 → MuJoCo Sim2Sim → Unitree 真机部署</span>
+            <span data-en>IsaacLab training → MuJoCo Sim2Sim → Unitree real-robot deployment</span>
+          </p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-num">03</div>
+          <h3 class="cap-title">
+            <span data-zh>四足 / 人形平台经验</span>
+            <span data-en>Quadruped / Humanoid Platforms</span>
+          </h3>
+          <p class="cap-desc">Unitree Go2 · Unitree G1 · Locomotion · Obstacle Traversal</p>
+        </div>
+
+        <div class="cap-card">
+          <div class="cap-num">04</div>
+          <h3 class="cap-title">
+            <span data-zh>数据采集与 VLA 部署</span>
+            <span data-en>Data Collection &amp; VLA Deployment</span>
+          </h3>
+          <p class="cap-desc">XR Teleoperation · RH56DFX · RealSense · Psi0 · VLA Deployment</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section class="section section-alt" id="experience">
+  <section class="section" id="experience">
     <div class="container">
       <div class="section-header">
-        <span class="section-num">02</span>
+        <span class="section-num">03</span>
         <h2 class="section-title">
-          <span data-zh>科研实习</span><span data-en>Experience</span>
+          <span data-zh>实习经历</span><span data-en>Experience</span>
         </h2>
       </div>
 
@@ -179,8 +215,8 @@
         <div class="exp-card-head">
           <div>
             <h3 class="exp-role">
-              <span data-zh>朗毅机器人 · 算法工程师（实习）</span>
-              <span data-en>LangYi Robotics · Algorithm Engineer (Intern)</span>
+              <span data-zh>算法工程师实习生 · 朗毅机器人</span>
+              <span data-en>Algorithm Engineer (Intern) · LangYi Robotics</span>
             </h3>
             <div class="exp-tags">
               <span class="tag">RL</span>
@@ -192,228 +228,176 @@
           <div class="exp-period">2025.10 — Present</div>
         </div>
 
-        <div class="exp-blocks">
-          <div class="exp-block">
-            <div class="exp-block-meta">
-              <span class="exp-block-time">2025.10 — 2026.02</span>
-              <span class="exp-block-title">
-                <span data-zh>四足机器人强化学习与 Sim2Real 部署</span>
-                <span data-en>Quadruped RL &amp; Sim2Real Deployment</span>
-              </span>
-            </div>
-            <p>
-              <span data-zh>负责四足机器人强化学习控制策略复现、训练与真机部署，基于 <code>rsl_rl</code> 和 <code>Isaac Lab</code> 重构 DreamWaQ、Extreme Parkour 等强化学习训练流程，完成观测空间、奖励函数、网络结构和训练配置设计；通过 MuJoCo Sim2Sim 验证策略可迁移性，并根据真机部署中的足端滑移、姿态抖动和过障失败问题开展奖励函数消融与参数迭代，实现速度控制、转向控制和障碍翻越等能力。</span>
-              <span data-en>Reproduced and deployed RL policies for quadrupeds. Reconstructed DreamWaQ and Extreme Parkour training pipelines on <code>rsl_rl</code> + <code>Isaac Lab</code>, designing observation spaces, reward functions, network architectures, and training configs. Validated transferability via MuJoCo Sim2Sim, then iterated on reward ablations to address foot slippage, posture jitter, and obstacle traversal failures on the real robot.</span>
-            </p>
+        <div class="exp-block">
+          <div class="exp-block-meta">
+            <span class="exp-block-title">
+              <span data-zh>工作方向</span>
+              <span data-en>Focus</span>
+            </span>
           </div>
+          <p>
+            <span data-zh>四足与人形机器人强化学习控制、Sim2Real 部署、遥操作数据采集与 VLA 部署验证。</span>
+            <span data-en>Reinforcement learning control on quadruped and humanoid robots, Sim2Real deployment, teleoperation-based data collection, and VLA deployment verification.</span>
+          </p>
+        </div>
 
-          <div class="exp-block">
-            <div class="exp-block-meta">
-              <span class="exp-block-time">2026.03 — 2026.05</span>
-              <span class="exp-block-title">
-                <span data-zh>G1 人形机器人 VLA · 遥操作 · 策略微调</span>
-                <span data-en>G1 Humanoid · VLA · Teleoperation · Policy Fine-tuning</span>
-              </span>
-            </div>
-            <p>
-              <span data-zh>围绕 Psi0、SONIC、ASAP 等前沿工作，负责 G1 人形机器人 locomotion、遥操作数据采集、策略微调与真机部署验证。基于 <code>unitree_rl_lab</code> 完成 G1 29DoF locomotion 策略的 Sim2Sim/Sim2Real 测试，并依据真机稳定性问题进行消融实验和奖励函数调参；同时搭建 <code>PICO + XR Teleoperate + 双因时 RH56DFX</code> 灵巧手遥操作链路，完成灵巧手真机遥操作、轨迹采集、数据格式转换、策略微调与部署验证，形成"数据采集—模型训练—真机测试—迭代优化"链路闭环。</span>
-              <span data-en>Built end-to-end pipelines for G1 humanoid covering locomotion, teleop data collection, policy fine-tuning, and real-robot deployment, drawing on Psi0, SONIC, and ASAP. Validated G1 29-DoF locomotion via <code>unitree_rl_lab</code> in both Sim2Sim and Sim2Real with reward ablations. Built a teleop stack with <code>PICO + XR Teleoperate + RH56DFX dexterous hands</code> for trajectory collection, data conversion, policy fine-tuning, and deployment — closing the loop of "collect → train → test → iterate".</span>
-            </p>
+        <div class="exp-block">
+          <div class="exp-block-meta">
+            <span class="exp-block-title">
+              <span data-zh>主要工作</span>
+              <span data-en>Responsibilities</span>
+            </span>
           </div>
-
-          <div class="exp-block">
-            <div class="exp-block-meta">
-              <span class="exp-block-time">
-                <span data-zh>科研项目</span>
-                <span data-en>Research</span>
-              </span>
-              <span class="exp-block-title">
-                <span data-zh>国家重点研发计划（6500 万）· 深远海水下柔性储油储液装置</span>
-                <span data-en>National Key R&amp;D Program (¥65M) · Deep-Sea Flexible Liquid Storage</span>
-              </span>
-            </div>
-            <p>
-              <span data-zh>面向深远海复杂流场下柔性装置布放控制问题，参与构建智能控制技术路线，结合水动力仿真、姿态调控与轨迹优化方法，形成"流场感知—状态反馈—控制决策—轨迹优化"的建模方案。</span>
-              <span data-en>Contributing to intelligent control of flexible deep-sea liquid storage devices under complex flow fields. Built a modeling pipeline of "flow sensing → state feedback → control decision → trajectory optimization" combining hydrodynamic simulation, attitude control, and trajectory optimization.</span>
-            </p>
-          </div>
+          <ul class="exp-list">
+            <li><span data-zh>基于 IsaacLab、rsl_rl 和 MuJoCo 搭建四足机器人强化学习训练与验证流程；</span><span data-en>Built quadruped RL training and validation pipelines on IsaacLab, rsl_rl and MuJoCo;</span></li>
+            <li><span data-zh>复现 DreamWaQ、Extreme Parkour 等方法，并完成 Go2 真机部署；</span><span data-en>Reproduced DreamWaQ and Extreme Parkour, and deployed them on Unitree Go2;</span></li>
+            <li><span data-zh>基于 unitree_rl_lab 训练 G1 29DoF locomotion 策略；</span><span data-en>Trained G1 29-DoF locomotion policies on unitree_rl_lab;</span></li>
+            <li><span data-zh>搭建 G1 + PICO + RH56DFX 双手遥操作与数据采集链路；</span><span data-en>Built a G1 + PICO + RH56DFX dual-hand teleoperation and data-collection stack;</span></li>
+            <li><span data-zh>复现 Psi0 微调与部署流程，进行 G1 真机部署验证；</span><span data-en>Reproduced the Psi0 fine-tuning and deployment pipeline, with real-robot validation on G1;</span></li>
+            <li><span data-zh>针对足端滑移、姿态抖动、转向失败、部署延迟、硬件映射不一致等问题进行调试和复盘。</span><span data-en>Debugged foot slippage, posture jitter, turning failure, deployment latency, and hardware-mapping mismatches.</span></li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Quadruped -->
-  <section class="section" id="quadruped">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-num">03</span>
-        <h2 class="section-title">
-          <span data-zh>四足机器人 · Unitree Go2</span>
-          <span data-en>Quadruped · Unitree Go2</span>
-        </h2>
-        <p class="section-lede">
-          <span data-zh>从论文阅读、代码复现、训练优化到仿真验证、真机部署的全链路闭环</span>
-          <span data-en>End-to-end loop closure: paper → code → training → simulation → real-robot deployment</span>
-        </p>
-      </div>
-
-      <!-- DreamWaQ Project -->
-      <div class="project">
-        <div class="project-head">
-          <div>
-            <h3 class="project-title">DreamWaQ</h3>
-            <p class="project-sub">
-              <span data-zh>从历史本体感知学习隐式环境表征</span>
-              <span data-en>Learning implicit environment representations from proprioception history</span>
-            </p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Isaac Lab</span>
-            <span class="tag">rsl_rl</span>
-            <span class="tag">MuJoCo</span>
-            <span class="tag">Curriculum</span>
-          </div>
-        </div>
-        <p class="project-desc">
-          <span data-zh>独立完成 DreamWaQ 网络结构配置，依据论文并迭代修改奖励函数（任务奖励、稳定性、平滑项、足端项），围绕地形课程学习持续定位问题并迭代修改，最终在 IsaacLab 中完成仿真训练，MuJoCo 中完成 sim2sim 验证，并打通 sim2real 全流程。</span>
-          <span data-en>Independently reproduced DreamWaQ from scratch: configured the network, iteratively tuned reward functions (task / stability / smoothness / foot terms), and applied terrain curriculum learning. Trained in IsaacLab, validated via MuJoCo Sim2Sim, and deployed to the real robot — full Sim2Real pipeline closure.</span>
-        </p>
-        <div class="project-link">
-          <a href="https://github.com/wx839/DreamWaQ" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            github.com/wx839/DreamWaQ
-          </a>
-        </div>
-
-        <!-- Sub-tasks: training videos -->
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">3.1</span>
-            <span data-zh>IsaacLab 仿真训练</span>
-            <span data-en>IsaacLab Simulation Training</span>
-          </h4>
-          <p class="task-desc">
-            <span data-zh>在 IsaacLab 中并行仿真训练，结合训练日志与可视化片段进行过程分析</span>
-            <span data-en>Massively parallel simulation training with training-log inspection and rollout visualization</span>
-          </p>
-          <div class="video-grid" data-group="go2-isaaclab">
-            <div class="video-card" data-video="go2-isaaclab-1.mp4" data-thumb="go2-isaaclab-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="go2-isaaclab-2.mp4" data-thumb="go2-isaaclab-2.jpg"></div>
-            <div class="video-card" data-video="go2-isaaclab-3.mp4" data-thumb="go2-isaaclab-3.jpg"></div>
-            <div class="video-card" data-video="go2-isaaclab-4.mp4" data-thumb="go2-isaaclab-4.jpg"></div>
-          </div>
-        </div>
-
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">3.2</span>
-            <span data-zh>MuJoCo Sim2Sim 验证</span>
-            <span data-en>MuJoCo Sim2Sim Validation</span>
-          </h4>
-          <p class="task-desc">
-            <span data-zh>在 MuJoCo 中验证策略跨仿真器迁移能力</span>
-            <span data-en>Cross-simulator policy transfer validation in MuJoCo</span>
-          </p>
-          <div class="video-grid" data-group="go2-mujoco">
-            <div class="video-card" data-video="go2-mujoco-1.mp4" data-thumb="go2-mujoco-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="go2-mujoco-2.mp4" data-thumb="go2-mujoco-2.jpg"></div>
-            <div class="video-card" data-video="go2-mujoco-3.mp4" data-thumb="go2-mujoco-3.jpg"></div>
-          </div>
-        </div>
-
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">3.3</span>
-            <span data-zh>真机部署 · Sim2Real</span>
-            <span data-en>Real-Robot Deployment · Sim2Real</span>
-          </h4>
-          <p class="task-desc">
-            <span data-zh>从 0-1 完成项目代码，打通 sim2real 全流程，针对足端滑移与姿态抖动迭代奖励函数</span>
-            <span data-en>Built the deployment pipeline from scratch, iterating reward functions to fix foot slippage and posture jitter</span>
-          </p>
-          <div class="video-grid" data-group="go2-real">
-            <div class="video-card" data-video="go2-real-1.mp4" data-thumb="go2-real-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="go2-real-2.mp4" data-thumb="go2-real-2.jpg"></div>
-            <div class="video-card" data-video="go2-real-3.mp4" data-thumb="go2-real-3.jpg"></div>
-            <div class="video-card" data-video="go2-real-4.mp4" data-thumb="go2-real-4.jpg"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Extreme Parkour Project -->
-      <div class="project">
-        <div class="project-head">
-          <div>
-            <h3 class="project-title">Extreme Parkour</h3>
-            <p class="project-sub">
-              <span data-zh>本体感知 + 深度相机外部感知 · 极限越障</span>
-              <span data-en>Proprioception + depth camera · Extreme obstacle traversal</span>
-            </p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Two-stage</span>
-            <span class="tag">Depth Camera</span>
-            <span class="tag">Distillation</span>
-          </div>
-        </div>
-        <p class="project-desc">
-          <span data-zh>完成 Extreme Parkour 两阶段模型仿真训练与从仿真策略验证到真机场景部署的全流程打通。当前 student policy 与论文效果仍存在差距，正在持续优化中。</span>
-          <span data-en>Completed two-stage Extreme Parkour training and the full Sim2Real validation pipeline. The student policy still has a gap to the paper, and is under active iteration.</span>
-        </p>
-
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">3.4</span>
-            <span data-zh>两阶段模型仿真训练</span>
-            <span data-en>Two-Stage Simulation Training</span>
-          </h4>
-          <div class="video-grid" data-group="parkour-train">
-            <div class="video-card" data-video="parkour-train-1.mp4" data-thumb="parkour-train-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="parkour-train-2.mp4" data-thumb="parkour-train-2.jpg"></div>
-          </div>
-        </div>
-
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">3.5</span>
-            <span data-zh>真机部署</span>
-            <span data-en>Real-Robot Deployment</span>
-          </h4>
-          <div class="video-grid" data-group="parkour-real">
-            <div class="video-card" data-video="parkour-real-1.mp4" data-thumb="parkour-real-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="parkour-real-2.mp4" data-thumb="parkour-real-2.jpg"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Humanoid -->
-  <section class="section section-alt" id="humanoid">
+  <!-- Featured Projects -->
+  <section class="section section-alt" id="projects">
     <div class="container">
       <div class="section-header">
         <span class="section-num">04</span>
         <h2 class="section-title">
-          <span data-zh>人形机器人 · Unitree G1</span>
-          <span data-en>Humanoid · Unitree G1</span>
+          <span data-zh>代表项目</span><span data-en>Featured Projects</span>
         </h2>
         <p class="section-lede">
-          <span data-zh>Locomotion → 数据采集 → Manipulation → 评估部署，分阶段全链路验证</span>
-          <span data-en>Locomotion → Data Collection → Manipulation → Eval/Deploy — staged end-to-end verification</span>
+          <span data-zh>从论文复现、强化学习训练，到 Sim2Sim 验证与 Unitree 真机部署的全链路工作。</span>
+          <span data-en>End-to-end work from paper reproduction and RL training to Sim2Sim validation and Unitree real-robot deployment.</span>
         </p>
       </div>
 
-      <!-- G1 Locomotion -->
+      <!-- Project 1: DreamWaQ -->
       <div class="project">
         <div class="project-head">
           <div>
-            <h3 class="project-title">
-              <span data-zh>Locomotion · 全身运动控制</span>
-              <span data-en>Locomotion · Whole-Body Control</span>
-            </h3>
+            <h3 class="project-title">DreamWaQ · <span data-zh>Unitree Go2 强化学习控制</span><span data-en>Unitree Go2 RL Control</span></h3>
             <p class="project-sub">
-              <span data-zh>G1 29-DoF 行走 / 转向 / 越障 · PPO 训练全链路</span>
-              <span data-en>G1 29-DoF walking / turning / obstacle clearing · Full PPO pipeline</span>
+              <span data-zh>四足强化学习控制 · IsaacLab → MuJoCo → Real Robot</span>
+              <span data-en>Quadruped RL control · IsaacLab → MuJoCo → Real Robot</span>
+            </p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">IsaacLab</span>
+            <span class="tag">rsl_rl</span>
+            <span class="tag">MuJoCo</span>
+            <span class="tag">Sim2Real</span>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>项目目标</span><span data-en>Goal</span></h4>
+            <p>
+              <span data-zh>复现 DreamWaQ 风格的四足机器人强化学习控制流程，并完成 IsaacLab 训练、MuJoCo Sim2Sim 验证与 Unitree Go2 真机部署。</span>
+              <span data-en>Reproduce a DreamWaQ-style RL control pipeline for quadrupeds, covering IsaacLab training, MuJoCo Sim2Sim validation, and Unitree Go2 real-robot deployment.</span>
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>我的工作</span><span data-en>What I Did</span></h4>
+            <ul class="project-list">
+              <li><span data-zh>基于 IsaacLab + rsl_rl 重构训练流程；</span><span data-en>Rebuilt the training pipeline on IsaacLab + rsl_rl;</span></li>
+              <li><span data-zh>完成观测空间、动作空间、奖励函数与训练配置设计；</span><span data-en>Designed observation/action spaces, reward functions, and training configs;</span></li>
+              <li><span data-zh>引入基于历史本体感知的隐式地形表征；</span><span data-en>Introduced implicit terrain representation from proprioception history;</span></li>
+              <li><span data-zh>针对足端滑移、姿态抖动、越障失败等问题进行奖励函数与课程参数迭代；</span><span data-en>Iterated reward functions and curriculum parameters to address foot slippage, posture jitter, and obstacle-traversal failures;</span></li>
+              <li><span data-zh>完成仿真训练、跨仿真器验证和真机部署闭环。</span><span data-en>Closed the loop on simulation training, cross-simulator validation, and real-robot deployment.</span></li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>当前结果</span><span data-en>Current Results</span></h4>
+            <p>
+              <span data-zh>实现 Go2 速度跟踪、转向控制和部分复杂地形部署验证。</span>
+              <span data-en>Achieved Go2 velocity tracking, turning control, and partial validation on complex terrains.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/wx839/DreamWaQ" target="_blank" rel="noopener" class="btn btn-action btn-action-github">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-zh>GitHub 仓库</span><span data-en>GitHub Repo</span>
+          </a>
+          <a href="#go2-isaaclab-demo" class="btn btn-action"><span data-zh>IsaacLab 演示</span><span data-en>IsaacLab Demo</span></a>
+          <a href="#go2-mujoco-demo" class="btn btn-action"><span data-zh>MuJoCo 演示</span><span data-en>MuJoCo Demo</span></a>
+          <a href="#go2-real-demo" class="btn btn-action"><span data-zh>真机视频</span><span data-en>Real-Robot Video</span></a>
+        </div>
+      </div>
+
+      <!-- Project 2: Extreme Parkour -->
+      <div class="project">
+        <div class="project-head">
+          <div>
+            <h3 class="project-title">Extreme Parkour · <span data-zh>Go2 越障策略</span><span data-en>Go2 Obstacle Traversal</span></h3>
+            <p class="project-sub">
+              <span data-zh>本体感知 + 深度感知 · Teacher-Student 蒸馏</span>
+              <span data-en>Proprioception + depth perception · Teacher-student distillation</span>
+            </p>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Two-stage</span>
+            <span class="tag">Depth</span>
+            <span class="tag">Curriculum</span>
+            <span class="tag">Distillation</span>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>项目目标</span><span data-en>Goal</span></h4>
+            <p>
+              <span data-zh>复现四足机器人复杂地形越障策略，验证本体感知、深度感知与课程学习在真实机器人上的迁移效果。</span>
+              <span data-en>Reproduce extreme-parkour-style obstacle traversal for quadrupeds and validate the transfer of proprioception, depth perception and curriculum learning to a real robot.</span>
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>我的工作</span><span data-en>What I Did</span></h4>
+            <ul class="project-list">
+              <li><span data-zh>搭建 teacher-student 训练流程；</span><span data-en>Built the teacher-student training pipeline;</span></li>
+              <li><span data-zh>使用 privileged information 训练 teacher policy；</span><span data-en>Trained the teacher policy with privileged information;</span></li>
+              <li><span data-zh>使用本体感知与深度输入训练 student policy；</span><span data-en>Trained the student policy on proprioception + depth inputs;</span></li>
+              <li><span data-zh>完成仿真训练、策略验证与真机部署尝试；</span><span data-en>Completed simulation training, policy validation, and real-robot deployment trials;</span></li>
+              <li><span data-zh>分析 student policy 与论文效果之间的差距。</span><span data-en>Analyzed the gap between the student policy and reported paper results.</span></li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>当前结果</span><span data-en>Current Results</span></h4>
+            <p>
+              <span data-zh>已打通训练与真机部署流程，并完成真实越障尝试；当前效果与论文仍有差距，后续继续优化感知输入、课程难度与 reward design。</span>
+              <span data-en>The training and real-robot deployment pipelines are working end-to-end, and we have completed real obstacle-traversal attempts. There is still a gap to the paper, and we are continuing to refine perception inputs, curriculum difficulty, and reward design.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/wx839/Parkour" target="_blank" rel="noopener" class="btn btn-action btn-action-github">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-zh>GitHub 仓库</span><span data-en>GitHub Repo</span>
+          </a>
+          <a href="#parkour-train-demo" class="btn btn-action"><span data-zh>仿真视频</span><span data-en>Sim Video</span></a>
+          <a href="#parkour-real-demo" class="btn btn-action"><span data-zh>真机视频</span><span data-en>Real-Robot Video</span></a>
+        </div>
+      </div>
+
+      <!-- Project 3: G1 Locomotion -->
+      <div class="project">
+        <div class="project-head">
+          <div>
+            <h3 class="project-title">G1 Locomotion · <span data-zh>人形机器人强化学习</span><span data-en>Humanoid RL</span></h3>
+            <p class="project-sub">
+              <span data-zh>Unitree G1 29-DoF · PPO 全链路训练与真机验证</span>
+              <span data-en>Unitree G1 29-DoF · Full PPO pipeline with real-robot validation</span>
             </p>
           </div>
           <div class="project-tags">
@@ -423,159 +407,302 @@
             <span class="tag">Sim2Real</span>
           </div>
         </div>
-        <p class="project-desc">
-          <span data-zh>梳理 PPO 从目标函数、Clip 机制到采样更新闭环的完整训练逻辑；完成 G1 仿真训练与 Sim2Sim 验证；围绕转向跟踪、姿态约束与课程分布持续调参；基于 TensorBoard 多轮训练日志对比迭代；最终筛选出两组效果较优的参数模型完成 Sim2Real 演示验证。</span>
-          <span data-en>Walked through full PPO training logic (objective, clip, sampling-update loop). Completed G1 simulation training and Sim2Sim validation. Iteratively tuned turning tracking, posture constraints, and curriculum distribution via TensorBoard log comparison. Final two best-performing checkpoints were validated end-to-end on the real robot.</span>
-        </p>
 
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">4.1</span>
-            <span data-zh>仿真训练 · Sim2Sim</span>
-            <span data-en>Simulation Training · Sim2Sim</span>
-          </h4>
-          <div class="video-grid" data-group="g1-loco-sim">
-            <div class="video-card" data-video="g1-loco-sim-1.mp4" data-thumb="g1-loco-sim-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-loco-sim-2.mp4" data-thumb="g1-loco-sim-2.jpg"></div>
-            <div class="video-card" data-video="g1-loco-sim-3.mp4" data-thumb="g1-loco-sim-3.jpg"></div>
-          </div>
-        </div>
-
-        <div class="task task-highlight">
-          <h4 class="task-title">
-            <span class="task-num">4.2</span>
-            <span data-zh>Sim2Real 真机演示</span>
-            <span data-en>Sim2Real Real-Robot Demos</span>
-            <span class="task-badge">
-              <span data-zh>核心成果</span><span data-en>Highlight</span>
-            </span>
-          </h4>
-          <div class="video-grid" data-group="g1-loco-real">
-            <div class="video-card" data-video="g1-loco-real-1.mp4" data-thumb="g1-loco-real-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-loco-real-2.mp4" data-thumb="g1-loco-real-2.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-loco-real-3.mp4" data-thumb="g1-loco-real-3.jpg"></div>
-            <div class="video-card" data-video="g1-loco-real-4.mp4" data-thumb="g1-loco-real-4.jpg"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- G1 Mimic -->
-      <div class="project">
-        <div class="project-head">
-          <div>
-            <h3 class="project-title">
-              <span data-zh>Mimic · 全身动作模仿</span>
-              <span data-en>Mimic · Whole-Body Motion Imitation</span>
-            </h3>
-            <p class="project-sub">
-              <span data-zh>仿真训练与真机验证</span>
-              <span data-en>Simulation training and real-robot validation</span>
+        <div class="project-body">
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>项目目标</span><span data-en>Goal</span></h4>
+            <p>
+              <span data-zh>基于 unitree_rl_lab 训练 Unitree G1 29DoF locomotion 策略，理解并实践 PPO 在人形机器人运动控制中的完整训练闭环。</span>
+              <span data-en>Train a Unitree G1 29-DoF locomotion policy on unitree_rl_lab, and walk through the full PPO loop for humanoid motion control end-to-end.</span>
             </p>
           </div>
-          <div class="project-tags">
-            <span class="tag">Motion Retargeting</span>
-            <span class="tag">Whole-Body</span>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>我的工作</span><span data-en>What I Did</span></h4>
+            <ul class="project-list">
+              <li><span data-zh>梳理 PPO 目标函数、Clip 机制、GAE、采样与更新流程；</span><span data-en>Walked through PPO objectives, the clip mechanism, GAE, and the sampling/update loop;</span></li>
+              <li><span data-zh>对齐 G1 的 observation space、action space 与 PD 控制接口；</span><span data-en>Aligned G1's observation space, action space, and PD control interface;</span></li>
+              <li><span data-zh>完成 IsaacLab 仿真训练和 MuJoCo Sim2Sim 验证；</span><span data-en>Completed IsaacLab simulation training and MuJoCo Sim2Sim validation;</span></li>
+              <li><span data-zh>基于 TensorBoard 对比多轮训练结果；</span><span data-en>Compared multiple training runs via TensorBoard;</span></li>
+              <li><span data-zh>围绕转向跟踪、姿态稳定、课程分布、动作尺度进行调参；</span><span data-en>Tuned turning tracking, posture stability, curriculum distribution, and action scaling;</span></li>
+              <li><span data-zh>筛选 checkpoint 进行真机验证。</span><span data-en>Selected checkpoints for real-robot validation.</span></li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>当前结果</span><span data-en>Current Results</span></h4>
+            <p>
+              <span data-zh>已完成训练、Sim2Sim 与真机验证链路；当前重点是提升转向稳定性、降低姿态抖动并缩小 Sim2Real gap。</span>
+              <span data-en>Training, Sim2Sim, and real-robot validation are working end-to-end. Current priorities are improving turning stability, reducing posture jitter, and narrowing the Sim2Real gap.</span>
+            </p>
           </div>
         </div>
-        <p class="project-desc">
-          <span data-zh>完成 Mimic 模型的仿真训练与真机验证，实现 G1 全身复杂动作模仿。</span>
-          <span data-en>Completed Mimic model training in simulation and verified on the real robot — full-body complex motion imitation on G1.</span>
-        </p>
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">4.3</span>
-            <span data-zh>仿真训练 + 真机演示</span>
-            <span data-en>Simulation + Real-Robot Demos</span>
-          </h4>
-          <div class="video-grid" data-group="g1-mimic">
-            <div class="video-card" data-video="g1-mimic-1.mp4" data-thumb="g1-mimic-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-mimic-2.mp4" data-thumb="g1-mimic-2.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-mimic-3.mp4" data-thumb="g1-mimic-3.jpg"></div>
-            <div class="video-card" data-video="g1-mimic-4.mp4" data-thumb="g1-mimic-4.jpg"></div>
-          </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/wx839/unitree_rl_lab" target="_blank" rel="noopener" class="btn btn-action btn-action-github">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-zh>GitHub 仓库</span><span data-en>GitHub Repo</span>
+          </a>
+          <a href="#g1-loco-sim-demo" class="btn btn-action"><span data-zh>仿真视频</span><span data-en>Sim Video</span></a>
+          <a href="#g1-loco-mujoco-demo" class="btn btn-action"><span data-zh>MuJoCo 视频</span><span data-en>MuJoCo Video</span></a>
+          <a href="#g1-loco-real-demo" class="btn btn-action"><span data-zh>真机视频</span><span data-en>Real-Robot Video</span></a>
         </div>
       </div>
 
-      <!-- G1 Teleoperation -->
+      <!-- Project 4: XR Teleoperation -->
       <div class="project">
         <div class="project-head">
           <div>
-            <h3 class="project-title">
-              <span data-zh>XR 遥操作 · 灵巧手数据采集</span>
-              <span data-en>XR Teleoperation · Dexterous-Hand Data Collection</span>
-            </h3>
+            <h3 class="project-title">XR Teleoperation · <span data-zh>双手遥操作与数据采集</span><span data-en>Dual-Hand Teleop &amp; Data Collection</span></h3>
             <p class="project-sub">
-              <span data-zh>PICO + RH56DFX 双手遥操作链路</span>
-              <span data-en>PICO + RH56DFX dual-hand teleop pipeline</span>
+              <span data-zh>G1 + RH56DFX 灵巧手 · PICO + WebXR 数据链路</span>
+              <span data-en>G1 + RH56DFX dexterous hands · PICO + WebXR data pipeline</span>
             </p>
           </div>
           <div class="project-tags">
             <span class="tag">PICO 4 Ultra</span>
             <span class="tag">RH56DFX</span>
-            <span class="tag">XR Teleoperate</span>
+            <span class="tag">WebXR</span>
+            <span class="tag">Data Collection</span>
           </div>
         </div>
-        <p class="project-desc">
-          <span data-zh>搭建 PICO + XR Teleoperate + 双因时 RH56DFX 灵巧手遥操作链路，完成仿真遥操作与真机遥操作验证，打通 XR 交互链路；完成轨迹采集、数据格式转换、策略微调与部署验证。</span>
-          <span data-en>Built a teleoperation pipeline with PICO + XR Teleoperate + RH56DFX dexterous hands. Validated both simulation and real-robot teleoperation. Completed trajectory collection, data format conversion, policy fine-tuning, and deployment.</span>
-        </p>
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">4.4</span>
-            <span data-zh>双手遥操作演示</span>
-            <span data-en>Dual-Hand Teleoperation</span>
-          </h4>
-          <div class="video-grid" data-group="g1-teleop">
-            <div class="video-card" data-video="g1-teleop-1.mp4" data-thumb="g1-teleop-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-teleop-2.mp4" data-thumb="g1-teleop-2.jpg" data-eager="true"></div>
+
+        <div class="project-body">
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>项目目标</span><span data-en>Goal</span></h4>
+            <p>
+              <span data-zh>搭建面向 G1 + RH56DFX 灵巧手的数据采集链路，为后续模仿学习和 VLA 微调提供真实轨迹数据。</span>
+              <span data-en>Build a data-collection pipeline for G1 + RH56DFX dexterous hands, supplying real trajectory data for downstream imitation learning and VLA fine-tuning.</span>
+            </p>
           </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>我的工作</span><span data-en>What I Did</span></h4>
+            <ul class="project-list">
+              <li><span data-zh>搭建 PICO + WebXR + teleimager + RH56DFX 双手遥操作链路；</span><span data-en>Built the PICO + WebXR + teleimager + RH56DFX dual-hand teleoperation stack;</span></li>
+              <li><span data-zh>完成 Host / Jetson / PICO 多端通信配置；</span><span data-en>Configured Host / Jetson / PICO multi-endpoint communication;</span></li>
+              <li><span data-zh>实现双手遥操作与图像回传；</span><span data-en>Implemented dual-hand teleoperation with image streaming;</span></li>
+              <li><span data-zh>完成轨迹采集和数据格式转换验证；</span><span data-en>Completed trajectory collection and data-format conversion validation;</span></li>
+              <li><span data-zh>为 Psi0 等模型微调准备真实机器人数据链路。</span><span data-en>Prepared the real-robot data pipeline for downstream models such as Psi0.</span></li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>当前结果</span><span data-en>Current Results</span></h4>
+            <p>
+              <span data-zh>已验证双手遥操作和基础数据采集链路，后续重点是提升轨迹质量、多模态同步和训练数据可用性。</span>
+              <span data-en>Dual-hand teleoperation and basic data collection are validated. Next priorities are improving trajectory quality, multi-modal synchronization, and overall training-data usability.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://github.com/wx839/xr_teleoperate" target="_blank" rel="noopener" class="btn btn-action btn-action-github">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-zh>GitHub 仓库</span><span data-en>GitHub Repo</span>
+          </a>
+          <a href="#g1-teleop-demo" class="btn btn-action"><span data-zh>遥操作视频</span><span data-en>Teleop Video</span></a>
+          <a href="#g1-teleop-demo" class="btn btn-action"><span data-zh>数据采集说明</span><span data-en>Data Collection Notes</span></a>
         </div>
       </div>
 
-      <!-- VLA Models -->
+      <!-- Project 5: Psi0 -->
       <div class="project">
         <div class="project-head">
           <div>
-            <h3 class="project-title">
-              <span data-zh>VLA 模型 · Psi0 / SONIC</span>
-              <span data-en>VLA Models · Psi0 / SONIC</span>
-            </h3>
+            <h3 class="project-title">Psi0 · <span data-zh>VLA 微调与真机部署验证</span><span data-en>VLA Fine-tuning &amp; Real-Robot Deployment</span></h3>
             <p class="project-sub">
-              <span data-zh>前沿 Vision-Language-Action 模型微调与真机部署</span>
-              <span data-en>Frontier VLA fine-tuning and real-robot deployment</span>
+              <span data-zh>Vision-Language-Action 模型 · Unitree G1 真机部署</span>
+              <span data-en>Vision-Language-Action model · Unitree G1 real-robot deployment</span>
             </p>
           </div>
           <div class="project-tags">
             <span class="tag">VLA</span>
             <span class="tag">Fine-tuning</span>
+            <span class="tag">RealSense</span>
             <span class="tag">Open-loop Eval</span>
           </div>
         </div>
-        <p class="project-desc">
-          <span data-zh>梳理 Psi0 与 SONIC 论文技术路线；基于开源框架完成 Psi0 在 G1 上的微调训练，完成开环评估并在真机开展部署验证；完成 SONIC 的 MuJoCo sim2sim 验证，并搭建真机部署展示框架。</span>
-          <span data-en>Reviewed Psi0 and SONIC papers and pipelines. Fine-tuned Psi0 on G1 with open-source frameworks, completed open-loop evaluation, and deployed on the real robot. Validated SONIC via MuJoCo Sim2Sim and built a real-robot deployment demo framework.</span>
-        </p>
 
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">4.5</span>
-            <span data-zh>Psi0 真机部署</span>
-            <span data-en>Psi0 Real-Robot Deployment</span>
-          </h4>
-          <div class="video-grid" data-group="g1-psi0">
-            <div class="video-card" data-video="g1-psi0-1.mp4" data-thumb="g1-psi0-1.jpg" data-eager="true"></div>
+        <div class="project-body">
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>项目目标</span><span data-en>Goal</span></h4>
+            <p>
+              <span data-zh>复现 Psi0 的微调与部署流程，验证 Vision-Language-Action 模型在 Unitree G1 上的真实部署可行性。</span>
+              <span data-en>Reproduce the Psi0 fine-tuning and deployment pipeline and validate the feasibility of deploying a Vision-Language-Action model on Unitree G1.</span>
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>我的工作</span><span data-en>What I Did</span></h4>
+            <ul class="project-list">
+              <li><span data-zh>基于公开数据完成 Psi0 微调训练；</span><span data-en>Fine-tuned Psi0 on public data;</span></li>
+              <li><span data-zh>完成 open-loop evaluation；</span><span data-en>Performed open-loop evaluation;</span></li>
+              <li><span data-zh>搭建服务端推理、RealSense 图像服务与 G1 客户端部署链路；</span><span data-en>Built the server-side inference, RealSense image service, and G1 client deployment stack;</span></li>
+              <li><span data-zh>处理 RealSense、RTC 控制频率、手部硬件不匹配等部署问题；</span><span data-en>Handled deployment issues across RealSense, RTC control frequency, and dexterous-hand hardware mismatches;</span></li>
+              <li><span data-zh>在 G1 上进行初步真机部署验证。</span><span data-en>Completed an initial real-robot validation on G1.</span></li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h4 class="project-block-title"><span data-zh>当前结果</span><span data-en>Current Results</span></h4>
+            <p>
+              <span data-zh>已完成微调、开环评估和真机部署链路验证；当前效果仍受硬件适配、手部映射、动作稳定性和实时性影响，后续重点是构建更稳定的数据采集与闭环评估流程。</span>
+              <span data-en>Fine-tuning, open-loop evaluation, and the real-robot deployment pipeline are validated. Current behavior is still constrained by hardware adaptation, hand mapping, action stability, and real-time latency; next priorities are a more stable data-collection and closed-loop evaluation pipeline.</span>
+            </p>
           </div>
         </div>
 
-        <div class="task">
-          <h4 class="task-title">
-            <span class="task-num">4.6</span>
-            <span data-zh>SONIC 部署</span>
-            <span data-en>SONIC Deployment</span>
-          </h4>
-          <div class="video-grid" data-group="g1-sonic">
-            <div class="video-card" data-video="g1-sonic-1.mp4" data-thumb="g1-sonic-1.jpg" data-eager="true"></div>
-            <div class="video-card" data-video="g1-sonic-2.mp4" data-thumb="g1-sonic-2.jpg"></div>
+        <div class="project-actions">
+          <a href="https://github.com/wx839/Psi0" target="_blank" rel="noopener" class="btn btn-action btn-action-github">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-zh>GitHub 仓库</span><span data-en>GitHub Repo</span>
+          </a>
+          <a href="#g1-psi0-demo" class="btn btn-action"><span data-zh>真机部署视频</span><span data-en>Real-Robot Video</span></a>
+          <a href="#g1-psi0-demo" class="btn btn-action"><span data-zh>部署说明</span><span data-en>Deployment Notes</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Demos -->
+  <section class="section" id="demos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">
+          <span data-zh>精选视频</span><span data-en>Selected Robot Demos</span>
+        </h2>
+        <p class="section-lede">
+          <span data-zh>从 IsaacLab 仿真训练，到 MuJoCo Sim2Sim 验证，再到 Unitree Go2 / G1 真机部署的精选片段。</span>
+          <span data-en>Curated clips spanning IsaacLab training, MuJoCo Sim2Sim validation, and Unitree Go2 / G1 real-robot deployment.</span>
+        </p>
+      </div>
+
+      <!-- Group A: Go2 Quadruped RL -->
+      <div class="demo-group" id="go2-isaaclab-demo">
+        <h3 class="demo-group-title">
+          <span class="demo-group-letter">A</span>
+          <span data-zh>Go2 · 四足强化学习</span>
+          <span data-en>Go2 Quadruped RL</span>
+        </h3>
+        <div class="demo-grid">
+          <div class="demo-item" id="go2-mujoco-demo">
+            <div class="video-card" data-video="go2-isaaclab-1.mp4" data-thumb="go2-isaaclab-1.jpg" data-eager="true"></div>
+            <p class="demo-caption">
+              <span data-zh>Go2 IsaacLab 训练演示 · 多环境并行训练，速度跟踪与转向控制可视化。</span>
+              <span data-en>Go2 IsaacLab training demo — massively parallel rollouts with velocity tracking and turning control.</span>
+            </p>
+          </div>
+          <div class="demo-item">
+            <div class="video-card" data-video="go2-mujoco-1.mp4" data-thumb="go2-mujoco-1.jpg" data-eager="true"></div>
+            <p class="demo-caption">
+              <span data-zh>Go2 MuJoCo Sim2Sim 验证 · 跨仿真器迁移，定位姿态稳定性与扰动响应。</span>
+              <span data-en>Go2 MuJoCo Sim2Sim validation — cross-simulator transfer, posture stability and disturbance response.</span>
+            </p>
+          </div>
+          <div class="demo-item" id="go2-real-demo">
+            <div class="video-card" data-video="go2-real-1.mp4" data-thumb="go2-real-1.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>Go2 真机部署 · 速度跟踪与转向控制，针对足端滑移与姿态抖动迭代奖励函数。</span>
+              <span data-en>Go2 real-robot deployment — velocity tracking and turning control after iterating reward functions for foot slippage and posture jitter.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group B: Go2 Parkour -->
+      <div class="demo-group" id="parkour-train-demo">
+        <h3 class="demo-group-title">
+          <span class="demo-group-letter">B</span>
+          <span data-zh>Go2 · 越障策略</span>
+          <span data-en>Go2 Parkour</span>
+        </h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="video-card" data-video="parkour-train-1.mp4" data-thumb="parkour-train-1.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>Parkour 仿真训练 · Teacher-student 框架，本体感知 + 深度输入下的越障行为。</span>
+              <span data-en>Parkour simulation training — teacher-student framework with proprioception + depth inputs.</span>
+            </p>
+          </div>
+          <div class="demo-item" id="parkour-real-demo">
+            <div class="video-card" data-video="parkour-real-1.mp4" data-thumb="parkour-real-1.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>Parkour 真机越障尝试 · 真实地形迁移，当前与论文效果仍存在差距。</span>
+              <span data-en>Parkour real-robot obstacle attempts — terrain transfer, with a remaining gap to the paper.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group C: G1 Humanoid RL -->
+      <div class="demo-group" id="g1-loco-sim-demo">
+        <h3 class="demo-group-title">
+          <span class="demo-group-letter">C</span>
+          <span data-zh>G1 · 人形强化学习</span>
+          <span data-en>G1 Humanoid RL</span>
+        </h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="video-card" data-video="g1-loco-sim-1.mp4" data-thumb="g1-loco-sim-1.jpg" data-eager="true"></div>
+            <p class="demo-caption">
+              <span data-zh>G1 IsaacLab locomotion 训练 · 29-DoF 全身策略，PPO 训练过程可视化。</span>
+              <span data-en>G1 IsaacLab locomotion training — 29-DoF whole-body policy with PPO rollout visualization.</span>
+            </p>
+          </div>
+          <div class="demo-item" id="g1-loco-mujoco-demo">
+            <div class="video-card" data-video="g1-loco-sim-2.mp4" data-thumb="g1-loco-sim-2.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>G1 MuJoCo Sim2Sim 验证 · 跨仿真器迁移检查，姿态约束与转向跟踪。</span>
+              <span data-en>G1 MuJoCo Sim2Sim validation — cross-simulator transfer with posture and turning checks.</span>
+            </p>
+          </div>
+          <div class="demo-item" id="g1-loco-real-demo">
+            <div class="video-card" data-video="g1-loco-real-1.mp4" data-thumb="g1-loco-real-1.jpg" data-eager="true"></div>
+            <p class="demo-caption">
+              <span data-zh>G1 真机部署验证 · checkpoint 筛选后真机行走与转向。</span>
+              <span data-en>G1 real-robot validation — selected checkpoint walking and turning on hardware.</span>
+            </p>
+          </div>
+          <div class="demo-item">
+            <div class="video-card" data-video="g1-loco-real-4.mp4" data-thumb="g1-loco-real-4.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>G1 失败案例 · 转向不稳与摔倒诊断，用于复盘 Sim2Real gap。</span>
+              <span data-en>G1 failure case — unstable turning / fall diagnostics for analyzing the Sim2Real gap.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group D: Teleoperation & VLA -->
+      <div class="demo-group" id="g1-teleop-demo">
+        <h3 class="demo-group-title">
+          <span class="demo-group-letter">D</span>
+          <span data-zh>遥操作与 VLA 部署</span>
+          <span data-en>Teleoperation &amp; VLA</span>
+        </h3>
+        <div class="demo-grid">
+          <div class="demo-item">
+            <div class="video-card" data-video="g1-teleop-1.mp4" data-thumb="g1-teleop-1.jpg" data-eager="true"></div>
+            <p class="demo-caption">
+              <span data-zh>G1 + PICO + RH56DFX 双手遥操作 · WebXR 链路与图像回传。</span>
+              <span data-en>G1 + PICO + RH56DFX dual-hand teleoperation — WebXR pipeline with image streaming.</span>
+            </p>
+          </div>
+          <div class="demo-item" id="g1-psi0-demo">
+            <div class="video-card" data-video="g1-psi0-1.mp4" data-thumb="g1-psi0-1.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>Psi0 真机部署验证 · 服务端推理 + RealSense 图像服务 + G1 客户端部署。</span>
+              <span data-en>Psi0 real-robot validation — server-side inference + RealSense image service + G1 client deployment.</span>
+            </p>
+          </div>
+          <div class="demo-item">
+            <div class="video-card" data-video="g1-sonic-1.mp4" data-thumb="g1-sonic-1.jpg"></div>
+            <p class="demo-caption">
+              <span data-zh>SONIC / G1 whole-body control 补充演示 · MuJoCo Sim2Sim 与真机部署框架。</span>
+              <span data-en>SONIC / G1 whole-body control — MuJoCo Sim2Sim and real-robot deployment scaffold.</span>
+            </p>
           </div>
         </div>
       </div>
@@ -583,10 +710,10 @@
   </section>
 
   <!-- Awards -->
-  <section class="section" id="awards">
+  <section class="section section-alt" id="awards">
     <div class="container">
       <div class="section-header">
-        <span class="section-num">05</span>
+        <span class="section-num">06</span>
         <h2 class="section-title">
           <span data-zh>荣誉与奖项</span><span data-en>Awards &amp; Honors</span>
         </h2>
@@ -596,57 +723,74 @@
           <div class="award-icon">★</div>
           <div class="award-text">
             <div class="award-title">
-              <span data-zh>2021-2022 国家奖学金</span>
-              <span data-en>National Scholarship 2021-2022</span>
+              <span data-zh>清华大学硕士研究生</span>
+              <span data-en>M.S. Candidate, Tsinghua University</span>
             </div>
-            <div class="award-meta"><span data-zh>综合分第一 · 1/139</span><span data-en>Top Rank · 1/139</span></div>
+            <div class="award-meta"><span data-zh>2025 — 至今</span><span data-en>2025 — Present</span></div>
           </div>
         </div>
         <div class="award-card award-major">
           <div class="award-icon">★</div>
           <div class="award-text">
             <div class="award-title">
-              <span data-zh>2022-2023 国家奖学金</span>
-              <span data-en>National Scholarship 2022-2023</span>
+              <span data-zh>华中科技大学本科</span>
+              <span data-en>B.E., Huazhong University of Science and Technology</span>
             </div>
-            <div class="award-meta"><span data-zh>综合分第一 · 1/139</span><span data-en>Top Rank · 1/139</span></div>
+            <div class="award-meta"><span data-zh>2021 — 2025</span><span data-en>2021 — 2025</span></div>
           </div>
         </div>
         <div class="award-card award-major">
           <div class="award-icon">★</div>
           <div class="award-text">
             <div class="award-title">
-              <span data-zh>全国海洋航行器设计与制作大赛 C 类</span>
-              <span data-en>National Marine Vehicle Competition · Class C</span>
+              <span data-zh>国家奖学金 ×2</span>
+              <span data-en>National Scholarship · ×2</span>
             </div>
-            <div class="award-meta">
-              <span data-zh>全国特等奖 · 队长</span>
-              <span data-en>Top Prize · Captain</span>
+            <div class="award-meta"><span data-zh>2021-2022 / 2022-2023</span><span data-en>2021-2022 / 2022-2023</span></div>
+          </div>
+        </div>
+        <div class="award-card award-major">
+          <div class="award-icon">★</div>
+          <div class="award-text">
+            <div class="award-title">
+              <span data-zh>综合排名 1 / 139</span>
+              <span data-en>Rank 1 / 139</span>
             </div>
+            <div class="award-meta"><span data-zh>本科综合分两年第一</span><span data-en>Top rank · two consecutive years</span></div>
           </div>
         </div>
         <div class="award-card">
           <div class="award-icon">◆</div>
           <div class="award-text">
             <div class="award-title">
-              <span data-zh>全国大学生节能减排社会实践竞赛</span>
+              <span data-zh>优秀毕业生</span>
+              <span data-en>Outstanding Graduate</span>
+            </div>
+            <div class="award-meta"><span data-zh>华中科技大学 · 前 1%</span><span data-en>HUST · Top 1%</span></div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon">◆</div>
+          <div class="award-text">
+            <div class="award-title">
+              <span data-zh>全国海洋航行器设计与制作大赛</span>
+              <span data-en>National Marine Vehicle Design Competition</span>
+            </div>
+            <div class="award-meta"><span data-zh>全国特等奖 · 队长</span><span data-en>Top National Prize · Team Captain</span></div>
+          </div>
+        </div>
+        <div class="award-card">
+          <div class="award-icon">◆</div>
+          <div class="award-text">
+            <div class="award-title">
+              <span data-zh>全国大学生节能减排社会实践与科技竞赛</span>
               <span data-en>National Energy-Saving Innovation Competition</span>
             </div>
-            <div class="award-meta"><span data-zh>全国一等奖 · "建行杯"</span><span data-en>National First Prize</span></div>
+            <div class="award-meta"><span data-zh>全国一等奖</span><span data-en>National First Prize</span></div>
           </div>
         </div>
         <div class="award-card">
-          <div class="award-icon">◆</div>
-          <div class="award-text">
-            <div class="award-title">
-              <span data-zh>全国大学生数学建模竞赛</span>
-              <span data-en>National Mathematical Modeling Contest</span>
-            </div>
-            <div class="award-meta"><span data-zh>省级二等奖 · 队长</span><span data-en>Provincial Second Prize · Captain</span></div>
-          </div>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">◆</div>
+          <div class="award-icon">▲</div>
           <div class="award-text">
             <div class="award-title">
               <span data-zh>实用新型专利</span>
@@ -662,30 +806,10 @@
           <div class="award-icon">▲</div>
           <div class="award-text">
             <div class="award-title">
-              <span data-zh>华中科技大学优秀毕业生</span>
-              <span data-en>HUST Outstanding Graduate</span>
+              <span data-zh>全国大学生数学建模竞赛</span>
+              <span data-en>National Mathematical Modeling Contest</span>
             </div>
-            <div class="award-meta"><span data-zh>本科生标兵寝室 · 前 1%</span><span data-en>Top 1% Dormitory</span></div>
-          </div>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">▲</div>
-          <div class="award-text">
-            <div class="award-title">
-              <span data-zh>校三好学生 · 两年</span>
-              <span data-en>Outstanding Student × 2</span>
-            </div>
-            <div class="award-meta"><span data-zh>2021-2022 / 2022-2023 · 前 5%</span><span data-en>Top 5%</span></div>
-          </div>
-        </div>
-        <div class="award-card">
-          <div class="award-icon">▲</div>
-          <div class="award-text">
-            <div class="award-title">
-              <span data-zh>亚泰金创奖学金</span>
-              <span data-en>Yatai Jinchuang Scholarship</span>
-            </div>
-            <div class="award-meta"><span data-zh>前 5%</span><span data-en>Top 5%</span></div>
+            <div class="award-meta"><span data-zh>省级二等奖</span><span data-en>Provincial Second Prize</span></div>
           </div>
         </div>
       </div>
@@ -693,74 +817,62 @@
   </section>
 
   <!-- Tech Stack -->
-  <section class="section section-alt" id="tech">
+  <section class="section" id="tech">
     <div class="container">
       <div class="section-header">
-        <span class="section-num">06</span>
+        <span class="section-num">07</span>
         <h2 class="section-title">
           <span data-zh>技术栈</span><span data-en>Tech Stack</span>
         </h2>
       </div>
       <div class="tech-grid">
         <div class="tech-cat">
-          <h4>RL &amp; <span data-zh>仿真</span><span data-en>Simulation</span></h4>
+          <h4>Core</h4>
           <div class="tech-tags">
             <span class="tech-tag">PPO</span>
-            <span class="tech-tag">Isaac Lab</span>
-            <span class="tech-tag">Isaac Gym</span>
-            <span class="tech-tag">MuJoCo</span>
-            <span class="tech-tag">rsl_rl</span>
-            <span class="tech-tag">unitree_rl_lab</span>
+            <span class="tech-tag">Reinforcement Learning</span>
+            <span class="tech-tag">Sim2Real</span>
+            <span class="tech-tag">Reward Design</span>
             <span class="tech-tag">Curriculum Learning</span>
           </div>
         </div>
         <div class="tech-cat">
-          <h4><span data-zh>具身 / VLA</span><span data-en>Embodied / VLA</span></h4>
+          <h4>Robot Learning Stack</h4>
           <div class="tech-tags">
-            <span class="tech-tag">Psi0</span>
-            <span class="tech-tag">SONIC</span>
-            <span class="tech-tag">ASAP</span>
-            <span class="tech-tag">DreamWaQ</span>
-            <span class="tech-tag">Extreme Parkour</span>
-            <span class="tech-tag">Mimic</span>
+            <span class="tech-tag">IsaacLab</span>
+            <span class="tech-tag">MuJoCo</span>
+            <span class="tech-tag">rsl_rl</span>
+            <span class="tech-tag">unitree_rl_lab</span>
+            <span class="tech-tag">TensorBoard</span>
           </div>
         </div>
         <div class="tech-cat">
-          <h4><span data-zh>机器人平台</span><span data-en>Robot Platforms</span></h4>
+          <h4>Robotics Platforms</h4>
           <div class="tech-tags">
             <span class="tech-tag">Unitree Go2</span>
-            <span class="tech-tag">Unitree G1 (29-DoF)</span>
+            <span class="tech-tag">Unitree G1</span>
+            <span class="tech-tag">RealSense</span>
             <span class="tech-tag">RH56DFX</span>
-            <span class="tech-tag">PICO 4 Ultra</span>
           </div>
         </div>
         <div class="tech-cat">
-          <h4><span data-zh>编程语言</span><span data-en>Languages</span></h4>
+          <h4>Embodied AI / Deployment</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Psi0</span>
+            <span class="tech-tag">VLA Deployment</span>
+            <span class="tech-tag">XR Teleoperation</span>
+            <span class="tech-tag">SONIC</span>
+          </div>
+        </div>
+        <div class="tech-cat">
+          <h4>Engineering</h4>
           <div class="tech-tags">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">C++</span>
-            <span class="tech-tag">MATLAB</span>
-            <span class="tech-tag">Bash</span>
-          </div>
-        </div>
-        <div class="tech-cat">
-          <h4>ML / DL</h4>
-          <div class="tech-tags">
-            <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">TensorBoard</span>
-            <span class="tech-tag">NumPy</span>
-            <span class="tech-tag">CNN / RNN</span>
-            <span class="tech-tag"><span data-zh>时间序列</span><span data-en>Time Series</span></span>
-          </div>
-        </div>
-        <div class="tech-cat">
-          <h4><span data-zh>工程工具</span><span data-en>Engineering</span></h4>
-          <div class="tech-tags">
             <span class="tech-tag">Linux</span>
             <span class="tech-tag">Git</span>
+            <span class="tech-tag">Bash</span>
             <span class="tech-tag">Docker</span>
-            <span class="tech-tag">SolidWorks</span>
-            <span class="tech-tag">Arduino</span>
           </div>
         </div>
       </div>
@@ -768,18 +880,26 @@
   </section>
 
   <!-- Contact -->
-  <section class="section" id="contact">
+  <section class="section section-alt" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-num">07</span>
+        <span class="section-num">08</span>
         <h2 class="section-title">
           <span data-zh>联系方式</span><span data-en>Get in Touch</span>
         </h2>
         <p class="section-lede">
-          <span data-zh>正在寻找 RL / Sim2Real / 具身智能方向的全职机会，欢迎沟通</span>
-          <span data-en>Open to full-time opportunities in RL / Sim2Real / Embodied AI</span>
+          <span data-zh>如果需要完整经历，请下载 PDF 简历。</span>
+          <span data-en>For the full resume, please download the PDF version.</span>
         </p>
       </div>
+
+      <div class="contact-cv-banner">
+        <a href="assets/cv/wuxin_resume_cn.pdf" target="_blank" rel="noopener" class="btn btn-cv btn-cv-large" data-cv-link>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-zh>下载简历 PDF</span><span data-en>Download CV</span>
+        </a>
+      </div>
+
       <div class="contact-grid">
         <a href="mailto:x-wu25@mails.tsinghua.edu.cn" class="contact-card">
           <div class="contact-icon">
@@ -795,13 +915,13 @@
           <div class="contact-label">GitHub</div>
           <div class="contact-value">github.com/wx839</div>
         </a>
-        <a href="assets/cv.pdf" target="_blank" class="contact-card">
+        <a href="assets/cv/wuxin_resume_cn.pdf" target="_blank" rel="noopener" class="contact-card contact-card-cv" data-cv-link>
           <div class="contact-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </div>
           <div class="contact-label">CV / <span data-zh>简历</span><span data-en>Resume</span></div>
           <div class="contact-value">
-            <span data-zh>下载 PDF</span><span data-en>Download PDF</span>
+            <span data-zh>下载简历 PDF</span><span data-en>Download CV</span>
           </div>
         </a>
       </div>
@@ -814,8 +934,8 @@
       <p>
         <span class="footer-name">Wu Xin · 吴鑫</span>
         <span class="footer-sep">·</span>
-        <span data-zh>清华大学深圳国际研究生院</span>
-        <span data-en>Tsinghua SIGS</span>
+        <span data-zh>清华大学 · 机器人强化学习</span>
+        <span data-en>Tsinghua University · Robot Learning</span>
         <span class="footer-sep">·</span>
         <span>© 2026</span>
       </p>

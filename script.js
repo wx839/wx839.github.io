@@ -1,5 +1,5 @@
 /* ============================================================
-   Wu Xin — Personal Website
+   Wu Xin — Robot Learning Portfolio
    Interactivity: Language Toggle, Lazy Video, Scroll Reveal
    ============================================================ */
 
@@ -7,27 +7,36 @@
   'use strict';
 
   // -------------------- Language Toggle --------------------
+  // Default is always Chinese. Only honor a stored preference if the user
+  // has explicitly switched. EN is a toggle, never the default.
   const STORAGE_KEY = 'wx-portfolio-lang';
   const langToggle = document.getElementById('langToggle');
   const body = document.body;
+
+  const CV_LINKS = {
+    zh: 'assets/cv/wuxin_resume_cn.pdf',
+    en: 'assets/cv/wuxin_resume_cn.pdf'
+  };
+
+  function updateCvLinks(lang) {
+    const url = CV_LINKS[lang] || CV_LINKS.zh;
+    document.querySelectorAll('[data-cv-link]').forEach(function (el) {
+      el.setAttribute('href', url);
+    });
+  }
 
   function setLanguage(lang) {
     body.classList.remove('lang-zh', 'lang-en');
     body.classList.add('lang-' + lang);
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    updateCvLinks(lang);
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
   }
 
-  // Initial language: stored preference > browser language > zh
   function initLanguage() {
     let saved = null;
     try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-    if (saved === 'zh' || saved === 'en') {
-      setLanguage(saved);
-      return;
-    }
-    const browserLang = (navigator.language || 'zh').toLowerCase();
-    setLanguage(browserLang.startsWith('zh') ? 'zh' : 'en');
+    setLanguage(saved === 'en' ? 'en' : 'zh');
   }
   initLanguage();
 
@@ -41,6 +50,7 @@
   // -------------------- Scroll Progress Bar --------------------
   const progressBar = document.getElementById('scrollProgress');
   function updateProgress() {
+    if (!progressBar) return;
     const scrollTop = window.scrollY;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
@@ -63,16 +73,15 @@
   const videoBase = 'assets/videos/';
   const thumbBase = 'assets/thumbnails/';
 
-  // Build static markup for each card (thumbnail + play overlay)
   videoCards.forEach(function (card, idx) {
     const videoFile = card.dataset.video;
     const thumbFile = card.dataset.thumb;
     if (!videoFile) return;
 
-    // Set background thumbnail (loads only when card enters viewport via IntersectionObserver below)
-    card.dataset.thumbUrl = thumbBase + thumbFile;
+    if (thumbFile) {
+      card.dataset.thumbUrl = thumbBase + thumbFile;
+    }
 
-    // Build overlay markup
     card.innerHTML = `
       <span class="video-card-tag">${idx + 1 < 10 ? '0' + (idx + 1) : (idx + 1)}</span>
       <div class="video-card-overlay">
@@ -84,7 +93,6 @@
       </div>
     `;
 
-    // Click to play
     card.addEventListener('click', function () {
       if (card.classList.contains('playing')) return;
       playVideo(card);
@@ -103,16 +111,12 @@
     video.preload = 'auto';
     video.setAttribute('controlslist', 'nodownload');
 
-    // Insert below the tag/overlay so the corner number stays visible briefly
     card.appendChild(video);
     card.classList.add('playing');
 
-    // Try to autoplay (may need to be muted in some browsers)
     const playPromise = video.play();
     if (playPromise && typeof playPromise.catch === 'function') {
-      playPromise.catch(function () {
-        // Autoplay blocked - user can press play in native controls
-      });
+      playPromise.catch(function () { /* autoplay blocked; user can press play */ });
     }
   }
 
@@ -137,7 +141,6 @@
 
     videoCards.forEach(function (card) { thumbObserver.observe(card); });
   } else {
-    // Fallback: load all thumbs immediately
     videoCards.forEach(function (card) {
       if (card.dataset.thumbUrl) {
         card.style.backgroundImage = 'url(' + card.dataset.thumbUrl + ')';
@@ -148,7 +151,7 @@
   // -------------------- Scroll Reveal --------------------
   if ('IntersectionObserver' in window) {
     const revealTargets = document.querySelectorAll(
-      '.section-header, .about-grid, .exp-card, .project, .award-card, .tech-cat, .contact-card'
+      '.section-header, .academic-item, .cap-card, .exp-card, .project, .demo-group, .award-card, .tech-cat, .contact-card, .contact-cv-banner'
     );
     revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -165,11 +168,8 @@
   }
 
   // -------------------- Smooth scroll offset for sticky nav --------------------
-  // Native scroll-behavior:smooth handles the rest. Just make sure anchors don't
-  // get hidden under the sticky nav by using scroll-margin-top via CSS (set below).
-  // Inject a one-line style for scroll margin instead of editing main CSS.
   const navStyle = document.createElement('style');
-  navStyle.textContent = 'section[id], header[id] { scroll-margin-top: 70px; }';
+  navStyle.textContent = 'section[id], header[id] { scroll-margin-top: 80px; }';
   document.head.appendChild(navStyle);
 
 })();
